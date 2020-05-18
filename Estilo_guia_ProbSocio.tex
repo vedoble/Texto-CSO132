@@ -1,5 +1,5 @@
 %--------------------------------------------------------------------------
-% ARCHIVO .TEX DE DISE√ëO
+% ARCHIVO .TEX DE DISE—O
 % PAQUETES Y ESTILO DEL LIBRO 
 %--------------------------------------------------------------------------
 % Paquetes 
@@ -39,14 +39,14 @@
 \usepackage{pstricks}
 \usepackage{xparse}
 \usepackage{tcolorbox} 
-\tcbuselibrary{skins,breakable}                    % Librer√≠as tcolorbox
+\tcbuselibrary{skins,breakable}                    % LibrerÌas tcolorbox
 \usepackage{tikz,tkz-tab}% Cajas de Teoremas, ejemplos, etc.
 \usetikzlibrary{positioning,shadows,backgrounds,calc}%
 \usepackage{tikzpagenodes}
 \usepackage{xargs}                                 % Comandos con opciones
 \DeclareGraphicsExtensions{.pdf,.png,.jpg}
 \usepackage{multicol}
-% %\usepackage{epstopdf}% Conversi√≥n - Miktes 2.9 o inferior, TexLive 2009. o inferior
+% %\usepackage{epstopdf}% ConversiÛn - Miktes 2.9 o inferior, TexLive 2009. o inferior
 \usepackage[small,bf]{caption}
 \usepackage[breaklinks,colorlinks=true, pdfstartview=FitV, linkcolor=azulF, citecolor=azulF, urlcolor=azulF]{hyperref}
 \usepackage{amsmath,amssymb,amsfonts,latexsym,cancel,stmaryrd}%
@@ -87,25 +87,25 @@
 %----------------------------------------------------------------------------------------
 \usepackage{fancyhdr}
 
-% N√∫meros de p√°gina en rect√°ngulos y cap√≠tulo. Necesitamos posicionar los nodos
+% N˙meros de p·gina en rect·ngulos y capÌtulo. Necesitamos posicionar los nodos
 \usepackage[absolute]{textpos}
     \setlength{\TPHorizModule}{10mm}% 1 generic horizontal unit is equivalent to 10mm
     \setlength{\TPVertModule}{10mm}% 1 generic vertical unit is equivalent to 10mm
     \textblockorigin{0mm}{0mm}% top left corner set as origin
 
 %------------------------------------------------------------------------------
-% Decoraci√≥n de cabeceras 
+% DecoraciÛn de cabeceras 
 % Texto en secciones
 \newcommand{\helvb}{%
 \fontfamily{phv}\fontseries{b}\fontsize{9}{11}\selectfont}
 \newcommand{\helv}{%
 \fontfamily{phv}\fontsize{9}{11}\selectfont}
 \renewcommand{\sectionmark}[1]{\markright{\thesection\hspace{5pt}#1}{}} 
-% Configuraci√≥n de fuentes para el n√∫mero de p√°gina en el encabezado
+% ConfiguraciÛn de fuentes para el n˙mero de p·gina en el encabezado
 \fancyhf{} 
-%OP 1: Todas las p√°ginas con la secci√≥n a la izquierda
+%OP 1: Todas las p·ginas con la secciÛn a la izquierda
 %\fancyhead[LO,LE]{\rightmark} % L=Left, O=Odd y  E=Even pages
-%OP 2: Todas las p√°ginas con la secci√≥n a la izquierda en un rect√°ngulo (todo el header)
+%OP 2: Todas las p·ginas con la secciÛn a la izquierda en un rect·ngulo (todo el header)
 
 \fancyhead[LO,LE]{\helv\rightmark
 \begin{textblock}{1}(0,0)
@@ -117,15 +117,15 @@
 \end{tikzpicture}
 \end{textblock}
 }
-% Fin decoraci√≥n cabeceras
+% Fin decoraciÛn cabeceras
 
-\renewcommand{\headrulewidth}{0pt}   % Ancho de la l√≠nea bajo el encabezado
+\renewcommand{\headrulewidth}{0pt}   % Ancho de la lÌnea bajo el encabezado
 \addtolength{\headheight}{2.5pt}     % Aumente el espacio alrededor de la cabecera 
-\renewcommand{\footrulewidth}{0pt}   % Elimina la l√≠nea en el pie de p√°gina
+\renewcommand{\footrulewidth}{0pt}   % Elimina la lÌnea en el pie de p·gina
 % Estilo para cuando se especifica "pagestyle plain"
 \fancypagestyle{plain}{\fancyhead{}\renewcommand{\headrulewidth}{0pt}} 
 
-% Elimina el encabezado de las p√°ginas impares vac√≠as al final de los cap√≠tulos
+% Elimina el encabezado de las p·ginas impares vacÌas al final de los capÌtulos
 \makeatletter
 \renewcommand{\cleardoublepage}{
 \clearpage\ifodd\c@page\else
@@ -136,7 +136,7 @@
 \fi}
 \makeatother
 
-% N√∫meros de p√°gina en el borde
+% N˙meros de p·gina en el borde
 \fancyfoot[LO]{
 \begin{textblock}{3}(21,1) % y=1 inch = margen
 \begin{tikzpicture}[overlay]
@@ -163,7 +163,7 @@ at (-1.5cm,0pt){\textcolor{gray!10}{\thepage}};
 %-- Fin cabeceras 
 
 %----------------------------------------------------------------------------------------
-% Color en los m√°rgenes
+% Color en los m·rgenes
 %----------------------------------------------------------------------------------------
 % \pagecolor{grisamarillo}
 % \usepackage{eso-pic}
@@ -172,34 +172,34 @@ at (-1.5cm,0pt){\textcolor{gray!10}{\thepage}};
 %  \AtTextLowerLeft{\color{grisamarillo}%
 %   \rule[-\footskip]{\textwidth}{\dimexpr\textheight+\footskip}}}
 
-% Fin color m√°rgenes
+% Fin color m·rgenes
 
 
 
 %----------------------------------------------------------------------------------------
-% Pr√≥logo
+% PrÛlogo
 %----------------------------------------------------------------------------------------
 \NewDocumentEnvironment{prologo}{O{}}{%
 \addcontentsline{toc}{schapter}{%
 \hspace{6em}{\color{azulF}{\fontfamily{phv}\fontsize{9}{10}\selectfont Prol\'ogo}} \qquad}
-\chapter*{Pr√≥logo}
+\chapter*{PrÛlogo}
 \smallskip\smallskip
 \begin{minipage}{0.9\textwidth}
  #1}{\end{minipage}}
  
 
 %----------------------------------------------------------------------------------------
-% T√≠tulo
+% TÌtulo
 %----------------------------------------------------------------------------------------
 \newcommand*{\titulo}[4]{\begingroup%
 \raggedleft 
-\vspace*{\baselineskip} % Espacio en blanco en la parte superior de la p√°gina
+\vspace*{\baselineskip} % Espacio en blanco en la parte superior de la p·gina
 {\Large #1}\\[0.167\textheight] % Autor
-{\LARGE\bfseries #2}\\[\baselineskip] % pre-t√≠tulo
-{\textcolor{colortitulo}{\Huge #3}}\\[\baselineskip] % T√≠tulo
-{\Large \textit{#4}}\par % Descripci√≥n adicional
+{\LARGE\bfseries #2}\\[\baselineskip] % pre-tÌtulo
+{\textcolor{colortitulo}{\Huge #3}}\\[\baselineskip] % TÌtulo
+{\Large \textit{#4}}\par % DescripciÛn adicional
 
-\vfill % Espacio en blanco entre el bloque de t√≠tulo y "la editorial"
+\vfill % Espacio en blanco entre el bloque de tÌtulo y "la editorial"
 
 {\raggedright
 \begin{minipage}[c]{0.08\textwidth}
@@ -208,12 +208,12 @@ at (-1.5cm,0pt){\textcolor{gray!10}{\thepage}};
 \  \ \hfill\begin{minipage}[t]{0.9\textwidth}
 {\color{gray}
  \fhv{9}{Digital}\\
- \fhvb{9}{\color{azulF}Educaci√≥n e Internet.}
+ \fhvb{9}{\color{azulF}EducaciÛn e Internet.}
   \fntg[pag][8]{\color{grisF}
   \href{http://www.ecampus.usfx.bo/).}}}
 \end{minipage}          
 }%raggedright
-\vspace*{3\baselineskip} % Espacio en blanco antes del final de p√°gina
+\vspace*{3\baselineskip} % Espacio en blanco antes del final de p·gina
 \endgroup}
 % Fin Titulo--------------------------------------------------------
 
@@ -294,7 +294,7 @@ Copyright\copyright{#1}
 
 
 %----------------------------------------------------------------------------------------
-%	Numeraci√≥n de las secciones -- en el margen
+%	NumeraciÛn de las secciones -- en el margen
 %----------------------------------------------------------------------------------------
 
 \makeatletter
@@ -316,12 +316,12 @@ Copyright\copyright{#1}
 {0.1ex}
 {\normalfont\small\sffamily\bfseries}}
 \makeatother
-% Fin numeraci√≥n secciones
+% Fin numeraciÛn secciones
 
 
 
 %---------------------------------------------------------------------------------
-%  Entornos:  Ejemplo, teorema, proposici√≥n, lema, lista de ejercicios, 
+%  Entornos:  Ejemplo, teorema, proposiciÛn, lema, lista de ejercicios, 
 %              interludio, caja simple  
 %---------------------------------------------------------------------------------
 
@@ -369,20 +369,20 @@ Copyright\copyright{#1}
 arc=0mm,breakable,enhanced,colback=gray!5,boxrule=0pt,top=7mm,
 fontupper=\normalsize,step and label={tcbteo}{#3},
 overlay unbroken = {\draw[color=colordominante,line width=0.2pt] (frame.north west)--([xshift=0pt]frame.north east);
-%Caja de T√≠tulo: teo --
+%Caja de TÌtulo: teo --
 \node[wnodeTeorema](tituloteo) at ([xshift=0pt, yshift=-4mm]frame.north west)
 {\textbf{\color{colordominante} Teorema \thetcbteo \;#2}};
 %Borde superior --
 \draw[colordominante,line width=2.5cm] ([xshift=1.25cm, yshift=0cm]frame.north west)-- +(\examlen,3pt);
 },%
 overlay first = {\draw[color=colordominante,line width=0.2pt] (frame.north west)--([xshift=0pt]frame.north east);
-%Caja de T√≠tulo: teo --
+%Caja de TÌtulo: teo --
 \node[wnodeTeorema](tituloteo) at ([xshift=0pt, yshift=-4mm]frame.north west)
 {\textbf{\color{colordominante} Teorema \thetcbteo \;#2}};
 %Borde superior --
 \draw[colordominante,line width=2.5cm] ([xshift=1.25cm, yshift=0cm]frame.north west)-- +(\examlen,3pt);
 },%
-% Mantener borde en cambio de p√°gina 
+% Mantener borde en cambio de p·gina 
 overlay last = {\draw[color=colordominante,line width=0.2pt] (frame.north west)--([xshift=0pt]frame.north east);
                 } 
 #1}
@@ -399,20 +399,20 @@ overlay last = {\draw[color=colordominante,line width=0.2pt] (frame.north west)-
 	arc=0mm,breakable,enhanced,colback=gray!15,boxrule=0pt,top=7mm,
 	fontupper=\large,step and label={tcbejem}{#3},
 	overlay unbroken ={\draw[color=colordominante,line width=0.2pt] (frame.north west)--([xshift=0pt]frame.north east);
-		%Caja de T√≠tulo: ejem --
+		%Caja de TÌtulo: ejem --
 		\node[wnodeEjercicios](tituloteo) at ([xshift=0pt, yshift=-4mm]frame.north west)
 		{\textbf{\color{azul1} {\large Ejemplos: }}};
 		%Borde superior --
 		\draw[colordominante,line width=2.5cm] ([xshift=1.25cm, yshift=0cm]frame.north west)-- +(\examlen,3pt);
 	}, %
 	overlay first ={\draw[color=colordominante,line width=0.2pt] (frame.north west)--([xshift=0pt]frame.north east);
-		%Caja de T√≠tulo: ejem --
+		%Caja de TÌtulo: ejem --
 		\node[wnodeTeorema](tituloteo) at ([xshift=0pt, yshift=-4mm]frame.north west)
 		{\textbf{\color{colordominante} Ejemplos:}};
 		%Borde superior --
 		\draw[colordominante,line width=2.5cm] ([xshift=1.25cm, yshift=0cm]frame.north west)-- +(\examlen,3pt);
 	}, %
-	% Mantener borde en cambio de p√°gina 
+	% Mantener borde en cambio de p·gina 
 	overlay last ={\draw[color=colordominante,line width=0.2pt] (frame.north west)--([xshift=0pt]frame.north east);
 	},
 	#1}
@@ -427,25 +427,25 @@ overlay last = {\draw[color=colordominante,line width=0.2pt] (frame.north west)-
 %%%%%%%%%%%%%%%%%%%
 
 %\begin{proposicion}  o \begin{proposicion}[de tal] o \begin{proposicion}[][ref]
-% Proposici√≥n-----------------------------------------------------
+% ProposiciÛn-----------------------------------------------------
 \newtcolorbox{wwpropo}[3][]{%
 arc=0mm,breakable,enhanced,colback=gray!5,boxrule=0pt,top=7mm,
 fontupper=\normalsize,step and label={tcbpropo}{#3},
 overlay unbroken ={\draw[color=colordominante,line width=0.2pt] (frame.north west)--([xshift=0pt]frame.north east);
-%Caja de T√≠tulo: propo --
+%Caja de TÌtulo: propo --
 \node[wnodeTeorema](tituloteo) at ([xshift=0pt, yshift=-4mm]frame.north west)
-{\textbf{\color{colordominante} Proposici√≥n \thetcbpropo\;#2}};
+{\textbf{\color{colordominante} ProposiciÛn \thetcbpropo\;#2}};
 %Borde superior --
 \draw[colordominante,line width=2.5cm] ([xshift=1.25cm, yshift=0cm]frame.north west)-- +(\examlen,3pt);
 }, %
 overlay first ={\draw[color=colordominante,line width=0.2pt] (frame.north west)--([xshift=0pt]frame.north east);
-%Caja de T√≠tulo: propo --
+%Caja de TÌtulo: propo --
 \node[wnodeTeorema](tituloteo) at ([xshift=0pt, yshift=-4mm]frame.north west)
-{\textbf{\color{colordominante} Proposici√≥n \thetcbpropo\;#2}};
+{\textbf{\color{colordominante} ProposiciÛn \thetcbpropo\;#2}};
 %Borde superior --
 \draw[colordominante,line width=2.5cm] ([xshift=1.25cm, yshift=0cm]frame.north west)-- +(\examlen,3pt);
 }, %
-% Mantener borde en cambio de p√°gina 
+% Mantener borde en cambio de p·gina 
 overlay last ={\draw[color=colordominante,line width=0.2pt] (frame.north west)--([xshift=0pt]frame.north east);
         },
 #1}
@@ -468,7 +468,7 @@ overlay unbroken  = {%barra vertical
 overlay first  = {%barra vertical
 \draw[color=gray,line width=3pt] ([xshift=2pt] frame.north west)--([xshift=2pt] frame.south west);                
          },%
-% Mantener borde en cambio de p√°gina     
+% Mantener borde en cambio de p·gina     
 overlay last ={\draw[color=gray,line width=3pt] ([xshift=2pt] frame.north west)--([xshift=2pt] frame.south west);   },    
 #1}
 %-
@@ -490,7 +490,7 @@ overlay unbroken  = {%barra vertical
 overlay first  = {%barra vertical
 \draw[color=gray,line width=3pt] ([xshift=2pt] frame.north west)--([xshift=2pt] frame.south west);             
          },%
-% Mantener borde en cambio de p√°gina    
+% Mantener borde en cambio de p·gina    
 overlay last ={\draw[color=gray,line width=3pt] ([xshift=2pt] frame.north west)--([xshift=2pt] frame.south west);   },  
 #1}
 %-
@@ -501,25 +501,25 @@ overlay last ={\draw[color=gray,line width=3pt] ([xshift=2pt] frame.north west)-
 %----------------------------------------------------------------------
 
 
-% % Definici√≥n---------------------------------------------------
+% % DefiniciÛn---------------------------------------------------
 \newtcolorbox{wwdefinicion}[3][]{%
 arc=0mm,breakable,enhanced,colback=azul1!5,boxrule=0pt,
 top=6mm,fontupper=\normalsize,step and label={tcbdefi}{#3},
 overlay unbroken  = {
 %barra vertical
 \draw[color=colordominante,line width=3pt] ([xshift=2pt] frame.north west)--([xshift=2pt] frame.south west);         
-%Caja de T√≠tulo: defi --
+%Caja de TÌtulo: defi --
 \node[wnodeTeorema](titulodefi) at ([xshift=4.5pt, yshift=-3mm]frame.north west)
-{\textbf{Definici√≥n \thetcbdefi \;#2}};
+{\textbf{DefiniciÛn \thetcbdefi \;#2}};
                 }, %overlay
 overlay first  = {
 %barra vertical
 \draw[color=colordominante,line width=3pt] ([xshift=2pt] frame.north west)--([xshift=2pt] frame.south west);         
-%Caja de T√≠tulo: defi --
+%Caja de TÌtulo: defi --
 \node[wnodeTeorema](titulodefi) at ([xshift=4.5pt, yshift=-3mm]frame.north west)
-{\textbf{Definici√≥n \thetcbdefi \;#2}};
+{\textbf{DefiniciÛn \thetcbdefi \;#2}};
                 }, %overlay
-% Mantener borde en cambio de p√°gina
+% Mantener borde en cambio de p·gina
 overlay last    = {%barra vertical
 \draw[color=colordominante,line width=3pt] ([xshift=2pt] frame.north west)--([xshift=2pt] frame.south west);}
 #1}
@@ -541,7 +541,7 @@ breakable,drop fuzzy shadow,
 enhanced,
 colback=grisamarillo,
 boxrule=0pt,
-top=8mm, %Separaci√≥n vertical - inicia texto
+top=8mm, %SeparaciÛn vertical - inicia texto
 enlarge top by=\baselineskip/2+1mm,
 enlarge top at break by=0mm,pad at break=2mm,
 fontupper=\normalsize,
@@ -554,7 +554,7 @@ overlay unbroken  = {%
          text=black, 
          inner sep=1mm,anchor=west,font=\small\bf\sffamily] at ([xshift=-14.3pt,yshift=-4.1mm]frame.north west)%
 {\includegraphics{images/nodoejemplo}\raisebox{0.5cm}{}};
-% Caja numeraci√≥n y descripci√≥n
+% Caja numeraciÛn y descripciÛn
 \node[rectangle, 
  text=black, 
  inner sep=1mm,
@@ -570,7 +570,7 @@ overlay first  = {%
          text=black, 
          inner sep=1mm,anchor=west,font=\small\bf\sffamily] at ([xshift=-14.3pt,yshift=-4.1mm]frame.north west)%
 {\includegraphics{images/nodoejemplo}\raisebox{0.5cm}{}};
-% Caja numeraci√≥n y descripci√≥n
+% Caja numeraciÛn y descripciÛn
 \node[rectangle, 
  text=black, 
  inner sep=1mm,
@@ -578,7 +578,7 @@ overlay first  = {%
  font=\normalsize] at ([xshift=1.1cm,yshift=-2.9mm]frame.north west)%
  {\fhvb{10}{\;\thetcbejem \;\;\;#2}};
      }, % overlay
-%Borde cambio de p√°ginas
+%Borde cambio de p·ginas
 overlay middle={\draw[color=grisamarillo,line width=3pt] ([xshift=3pt] frame.north west)--([xshift=2pt] frame.south west);},
 overlay last={\draw[color=grisamarillo,line width=3pt] ([xshift=3pt] frame.north west)--([xshift=2pt] frame.south west);}
 #1}
@@ -598,7 +598,7 @@ overlay last={\draw[color=grisamarillo,line width=3pt] ([xshift=3pt] frame.north
 arc=0mm,breakable,%drop fuzzy shadow,
 enhanced,colback=gray!4,
 boxrule=0pt,
-top=3mm, %Separaci√≥n vertical - inicia texto
+top=3mm, %SeparaciÛn vertical - inicia texto
 enlarge top by=\baselineskip/2+1mm,
 enlarge top at break by=0mm,pad at break=2mm,
 fontupper=\normalsize,
@@ -608,7 +608,7 @@ overlay unbroken={\draw[color=gray!2,line width=0.2pt] (frame.north west)
   --([xshift=0pt]frame.north east)
   --([xshift=0pt]frame.south east)
   --([xshift=0pt]frame.south west)--(frame.north west);
-% Caja de T√≠tulo CAJA
+% Caja de TÌtulo CAJA
 \node[ rectangle, %minimum width=0cm, minimum height=0.0cm,
          top color=amarilloD, bottom color=amarilloD,
          inner sep=0.5mm,anchor=west,font=\normalsize]at ([xshift=-0.5pt,  yshift=2.30mm]frame.north west){\fhvb{10}{ #2}};
@@ -618,12 +618,12 @@ overlay first={\draw[color=gray!2,line width=0.2pt] (frame.north west)
   --([xshift=0pt]frame.north east)
   --([xshift=0pt]frame.south east)
   --([xshift=0pt]frame.south west)--(frame.north west);
-% Caja de T√≠tulo CAJA
+% Caja de TÌtulo CAJA
 \node[ rectangle, %minimum width=0cm, minimum height=0.0cm,
          top color=amarilloD, bottom color=amarilloD,
          inner sep=0.5mm,anchor=west,font=\normalsize]at ([xshift=-0.5pt,  yshift=2.30mm]frame.north west){\fhvb{10}{ #2}};
          },
-%Borde cambio de p√°gina
+%Borde cambio de p·gina
 overlay last={\draw[color=gray!2,line width=0.2pt] (frame.north west)
   --([xshift=0pt]frame.north east)
   --([xshift=0pt]frame.south east)
@@ -640,7 +640,7 @@ overlay last={\draw[color=gray!2,line width=0.2pt] (frame.north west)
 arc=0mm,breakable,drop fuzzy shadow,
 enhanced,colback=mycolorA!20,
 boxrule=0pt,
-top=2mm, %Separaci√≥n vertical - inicia texto
+top=2mm, %SeparaciÛn vertical - inicia texto
 enlarge top by=\baselineskip/2+1mm,
 enlarge top at break by=0mm,pad at break=2mm,
 fontupper=\normalsize,
@@ -657,7 +657,7 @@ overlay first={\draw[color=mycolorA,line width=0.5pt] (frame.north west)
   --([xshift=0pt]frame.south east)
   --([xshift=0pt]frame.south west)--(frame.north west);
         },
-%Borde cambio de p√°gina
+%Borde cambio de p·gina
 overlay last={\draw[color=mycolorA,line width=0.5pt] (frame.north west)
   --([xshift=0pt]frame.north east)
   --([xshift=0pt]frame.south east)
@@ -680,7 +680,7 @@ overlay first  = {%barra vertical
 overlay first  = {%barra vertical
 \draw[color=white,line width=3pt] ([xshift=2pt] frame.north west)--([xshift=2pt] frame.south west);                
          },%
-% Mantener borde en cambio de p√°gina     
+% Mantener borde en cambio de p·gina     
 overlay last ={\draw[color=white,line width=3pt] ([xshift=2pt] frame.north west)--([xshift=2pt] frame.south west);   },    
 #1}
 %-
@@ -693,27 +693,27 @@ overlay last ={\draw[color=white,line width=3pt] ([xshift=2pt] frame.north west)
 arc=0mm,breakable,
 enhanced,colback=white,
 boxrule=0pt,
-top=3mm, %Separaci√≥n vertical - inicia texto
+top=3mm, %SeparaciÛn vertical - inicia texto
 left=25pt,
 enlarge top by=\baselineskip/2+1mm,
 enlarge top at break by=0mm,pad at break=2mm,
 fontupper={\begin{tikzpicture}[overlay]
 \node[draw=colordominanteF,line width=1pt,circle,fill=white,font=\sffamily\bfseries,inner sep=2pt,outer sep=0pt] at (-15pt,3pt){\textcolor{colordominanteF}{N}};\end{tikzpicture}}~\normalfont,  %"NOTA..."+texto del cuerpo
-%Borde y c√≠rculo
+%Borde y cÌrculo
 overlay first={
 \draw[color=white,line width=0.5pt] (frame.north west)
   --([xshift=0pt]frame.north east)
   --([xshift=0pt]frame.south east)
   --([xshift=0pt]frame.south west)--(frame.north west);
         },
-%Borde y c√≠rculo
+%Borde y cÌrculo
 overlay first={
 \draw[color=white,line width=0.5pt] (frame.north west)
   --([xshift=0pt]frame.north east)
   --([xshift=0pt]frame.south east)
   --([xshift=0pt]frame.south west)--(frame.north west);
         },
-%Borde cambio de p√°gina
+%Borde cambio de p·gina
 overlay last={\draw[color=white,line width=0.5pt] (frame.north west)
   --([xshift=0pt]frame.north east)
   --([xshift=0pt]frame.south east)
@@ -763,7 +763,7 @@ overlay last={\draw[color=white,line width=0.5pt] (frame.north west)
       inner sep=1mm,anchor=west,font=\normalsize] 
    at ([xshift=0pt,yshift=-3mm]frame.north west)%
 {\textbf{Ejercicios}};},
-overlay last ={ } % cambio de p√°gina, solo caja gris
+overlay last ={ } % cambio de p·gina, solo caja gris
 #1}
 
 % Nuevo entorno personalizado----------------------------------------
@@ -783,7 +783,7 @@ overlay unbroken  = {%barra vertical
 overlay first  = {%barra vertical
 \draw[color=gray,line width=3pt] ([xshift=2pt] frame.north west)--([xshift=2pt] frame.south west);               
         },%
-% Mantener borde en cambio de p√°gina     
+% Mantener borde en cambio de p·gina     
 overlay last ={\draw[color=gray,line width=3pt] 
                      ([xshift=2pt] frame.north west)--([xshift=2pt] frame.south west);
               }     
@@ -805,26 +805,26 @@ fontupper=\normalsize,step and label={tcbejer}{#3},
 overlay unbroken = {
 %Borde grueso superior
 \draw[color=colorejercicios,line width=3pt] (frame.north west)--([xshift=0pt]frame.north east);
-%Caja de T√≠tulo: Ejer --
+%Caja de TÌtulo: Ejer --
 \node[rounded corners=3pt,  draw=colorejercicios, top color=white, bottom color=white, thick,inner sep=1mm,anchor=west, font=\small\bf\sffamily](tituloejer) at ([xshift=5mm, yshift=0mm]frame.north west)
 {\textbf{\color{miverde} Ejercicios  \thetcbejer \;#2}};
-%borde l√≠nea inferior
+%borde lÌnea inferior
  \draw[color=colorejercicios,line width=0.2pt] (frame.south west)--([xshift=0pt]frame.south east); 
 },%overlay
 overlay first = {
 %Borde grueso superior
 \draw[color=colorejercicios,line width=3pt] (frame.north west)--([xshift=0pt]frame.north east);
-%Caja de T√≠tulo: Ejer --
+%Caja de TÌtulo: Ejer --
 \node[rounded corners=3pt,  draw=colorejercicios, top color=white, bottom color=white, thick,inner sep=1mm,anchor=west, font=\small\bf\sffamily](tituloejer) at ([xshift=5mm, yshift=0mm]frame.north west)
 {\textbf{\color{miverde}  Ejercicios \thetcbejer \;#2}};
-%borde l√≠nea inferior
+%borde lÌnea inferior
  \draw[color=colorejercicios,line width=0.2pt] (frame.south west)--([xshift=0pt]frame.south east); 
 },%overlay
-% % Mantener borde en cambio de p√°gina 
+% % Mantener borde en cambio de p·gina 
 % overlay middle = {\draw[color=colordominante,line width=0.2pt] (frame.north west)--([xshift=0pt]frame.north east);
 %                 } 
 overlay middle ={},
-overlay last = { %borde l√≠nea inferior
+overlay last = { %borde lÌnea inferior
  \draw[color=colorejercicios,line width=0.2pt] (frame.south west)--([xshift=0pt]frame.south east); 
                 } 
 #1}
@@ -847,26 +847,26 @@ overlay last = { %borde l√≠nea inferior
 	overlay unbroken = {
 		%Borde grueso superior
 		\draw[color=colorejercicios1,line width=3pt] (frame.north west)--([xshift=0pt]frame.north east);
-		%Caja de T√≠tulo: Ejer --
+		%Caja de TÌtulo: Ejer --
 		\node[rounded corners=3pt,  draw=colorejercicios1, top color=white, bottom color=white, thick,inner sep=1mm,anchor=west, font=\small\bf\sffamily](tituloejer) at ([xshift=5mm, yshift=0mm]frame.north west)
 		{\textbf{\color{azul1}  \;#2}};
-		%borde l√≠nea inferior
+		%borde lÌnea inferior
 		\draw[color=colorejercicios1,line width=0.2pt] (frame.south west)--([xshift=0pt]frame.south east); 
 	},%overlay
 	overlay first = {
 		%Borde grueso superior
 		\draw[color=colorejercicios1,line width=3pt] (frame.north west)--([xshift=0pt]frame.north east);
-		%Caja de T√≠tulo: Ejer --
+		%Caja de TÌtulo: Ejer --
 		\node[rounded corners=3pt,  draw=colorejercicios1, top color=white, bottom color=white, thick,inner sep=1mm,anchor=west, font=\small\bf\sffamily](tituloejer) at ([xshift=5mm, yshift=0mm]frame.north west)
 		{\textbf{\color{azul1}  \;#2}};
-		%borde l√≠nea inferior
+		%borde lÌnea inferior
 		\draw[color=colorejercicios1,line width=0.2pt] (frame.south west)--([xshift=0pt]frame.south east); 
 	},%overlay
-	% % Mantener borde en cambio de p√°gina 
+	% % Mantener borde en cambio de p·gina 
 	% overlay middle = {\draw[color=colordominante,line width=0.2pt] (frame.north west)--([xshift=0pt]frame.north east);
 	%                 } 
 	overlay middle ={},
-	overlay last = { %borde l√≠nea inferior
+	overlay last = { %borde lÌnea inferior
 		\draw[color=colorejercicios1,line width=0.2pt] (frame.south west)--([xshift=0pt]frame.south east); 
 	} 
 	#1}
@@ -880,12 +880,12 @@ overlay last = { %borde l√≠nea inferior
 
 
 % Comandos para paquete answers
-% pregunta-soluci√≥n
+% pregunta-soluciÛn
 \newcommand{\exersol}[2]{
 \begin{ejer} 
 #1\scantokens{\begin{solu}#2\end{solu}}
 \end{ejer}}
-% listas \item pregunta-soluci√≥n
+% listas \item pregunta-soluciÛn
 \newcommand{\itemps}[2]{\item #1\scantokens{\begin{solu}#2\end{solu}}}
 
 \newcommand{\bex}{\scantokens{\begin{solu} \end{solu}}\begin{enumerate}[label=\alph*.)]}
@@ -914,7 +914,7 @@ overlay last = { %borde l√≠nea inferior
 
 
 %---------------------------------------------------------------------------------
-%  C√≥digo de programas (LaTeX en ese caso)
+%  CÛdigo de programas (LaTeX en ese caso)
 %---------------------------------------------------------------------------------
 % Listings
 \usepackage{listings}% uso: \lstinline|section|
@@ -1023,11 +1023,11 @@ emph={rm,bf,it,sf,sl,sc,tt,gtrdot,lesseqqgtr,Supset,mathbb,gtrless,doteqdot,sqsu
  
  
 %----------------------------------------------------------------------------- 
-%- Modoficaci√≥n de chapter para que abra y cierre archivos ans----------------
+%- ModoficaciÛn de chapter para que abra y cierre archivos ans----------------
 %-----------------------------------------------------------------------------
 
 %-------------------------------------------------------------------------------
-%- Modoficaci√≥n de chapter para que abra y cierre archivos ans del paquete answers                                   
+%- ModoficaciÛn de chapter para que abra y cierre archivos ans del paquete answers                                   
 \newcount\ansj % contador de listas ans i
 \ansj=\thechapter
 %           % -- Infiltrar \chapter --------------------------------------------
