@@ -63,7 +63,7 @@
 \usepackage{supertabular}
 \usepackage{booktabs}
 \usepackage[shortlabels]{enumitem}
-
+\usepackage{eso-pic, graphicx}
 %----------------------------------------------------------------------------------------
 % Fuentes
 %----------------------------------------------------------------------------------------
@@ -1031,6 +1031,8 @@ emph={rm,bf,it,sf,sl,sc,tt,gtrdot,lesseqqgtr,Supset,mathbb,gtrless,doteqdot,sqsu
 \newcount\ansj % contador de listas ans i
 \ansj=\thechapter
 %           % -- Infiltrar \chapter --------------------------------------------
+%%%%%%%
+
 %\makeatletter
 %\let\stdchapter\chapter % \stdchapter guarda la def original de %\chapter
 %\renewcommand*\chapter{ % -- Infiltrar: abrir y cerrar archivos %ans j---
@@ -1045,7 +1047,7 @@ emph={rm,bf,it,sf,sl,sc,tt,gtrdot,lesseqqgtr,Supset,mathbb,gtrless,doteqdot,sqsu
 %\def\nostarchapter[#1]#2{\stdchapter[{#1}]{#2}}
 %\makeatother
  % -- -------------------------------------------------------------------------
- 
+ %%%%%%%
 
  
  

@@ -39,14 +39,20 @@
 \newcommand{\ee}{\end{enumerate}}
 
 % --
+\usepackage{pdfpages}
+
 
 %-----------------------------------------------------------------------
 % Autor y Título
 %-----------------------------------------------------------------------
 \usepackage{palatino}  % Fuente ppl
 % TITULO DEL LIBRO
-\title{{\LARGE TEXTO GUÍA} \\~\\ {\Huge PROBLEMAS SOCIOECONÓMICOS} \\~\\
-             }
+\title{
+	 \AddToShipoutPictureBG*{\includegraphics[width=\paperwidth,height=\paperheight]{images/Portada}}
+	{\LARGE TEXTO GUÍA} \\~\\ {\Huge PROBLEMAS SOCIOECONÓMICOS} \\~\\
+            }
+%introducir en title, para fondo de portada:
+
 
 % AUTOR (\fntx es un tipo de fuente definida en el paquete de estilo)
 \author{
@@ -56,18 +62,22 @@
         \fntg[phv][12]{{\sc Universidad San Francisco Xavier }}  \\      
         %\fntb[ppl][14]{Versión 1.0 -- Abril 30, 2017.}
       }
+
 %----------------------------------------------------------------------
 
 \usepackage{fourier} % usando fuentes "Fourier" en vez de "Palatino" 
 
 \begin{document}
+
+
+%	\includepdf[pages=-]{images/Portada} % incluir un pdf pagina inicial
 %-----------------------------------------------------------------------
 % Hacer Título
 %-----------------------------------------------------------------------
 \parindent=0mm    % Sin sangría
 \pagenumbering{roman}
 \maketitle
-
+	%\includegraphics{images/Portada}
 
 %-----------------------------------------------------------------------
 % Tabla de contenidos
