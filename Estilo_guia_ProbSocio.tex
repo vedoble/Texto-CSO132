@@ -1031,19 +1031,19 @@ emph={rm,bf,it,sf,sl,sc,tt,gtrdot,lesseqqgtr,Supset,mathbb,gtrless,doteqdot,sqsu
 \newcount\ansj % contador de listas ans i
 \ansj=\thechapter
 %           % -- Infiltrar \chapter --------------------------------------------
-\makeatletter
-\let\stdchapter\chapter % \stdchapter guarda la def original de \chapter
-\renewcommand*\chapter{ % -- Infiltrar: abrir y cerrar archivos ans j---
-\expandafter\ifx\csname Closesolutionfile\endcsname \relax\else
-\Closesolutionfile{ans}\fi
-\expandafter\ifx\csname Opensolutionfile\endcsname \relax\else
-\Opensolutionfile{ans}[ans\number\ansj]\advance\ansj by 1\fi
+%\makeatletter
+%\let\stdchapter\chapter % \stdchapter guarda la def original de %\chapter
+%\renewcommand*\chapter{ % -- Infiltrar: abrir y cerrar archivos %ans j---
+%\expandafter\ifx\csname Closesolutionfile\endcsname \relax\else
+%\Closesolutionfile{ans}\fi
+%\expandafter\ifx\csname Opensolutionfile\endcsname \relax\else
+%\Opensolutionfile{ans}[ans\number\ansj]\advance\ansj by 1\fi
                         %------------------------------------------------------
                         % Volver a la def original de \chapter
-\@ifstar{\starchapter}{\@dblarg\nostarchapter}}
-\newcommand*\starchapter[1]{\stdchapter*{#1}}
-\def\nostarchapter[#1]#2{\stdchapter[{#1}]{#2}}
-\makeatother
+%\@ifstar{\starchapter}{\@dblarg\nostarchapter}}
+%\newcommand*\starchapter[1]{\stdchapter*{#1}}
+%\def\nostarchapter[#1]#2{\stdchapter[{#1}]{#2}}
+%\makeatother
  % -- -------------------------------------------------------------------------
  
 

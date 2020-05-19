@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.5.10)  18 MAY 2020 18:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.5.10)  18 MAY 2020 18:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1823,10 +1823,6 @@ Non-PDF special ignored!
 <special> ps:tx@Dict begin  gsave STV CP T /ps@refangle 0.  def grestore  e...
 
 {/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Output from handle ans going to ans0.tex
-\ans@file=\write8
-\openout8 = `ans0.tex'.
-
 [2
 
 ] (./Guia_ProblemasSocio.toc
@@ -1865,18 +1861,14 @@ LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10> not available
 LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
 (Font)              scaled to size 8.99994pt on input line 3.
 )
-\tf@toc=\write9
-\openout9 = `Guia_ProblemasSocio.toc'.
-
-
-Output from handle ans going to ans1.tex
-\openout8 = `ans1.tex'.
+\tf@toc=\write8
+\openout8 = `Guia_ProblemasSocio.toc'.
 
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 (Font)              scaled to size 17.99988pt on input line 87.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 17.99988pt on input line 87.
-[1] [2
+ [1] [2
 
 ]
 Cap\'{\i }tulo 1.
@@ -1960,12 +1952,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 87--88
  []
 
 )
-Output from handle ans going to ans2.tex
-\openout8 = `ans2.tex'.
-
 LaTeX Info: Redefining \. on input line 93.
 LaTeX Info: Redefining \% on input line 93.
-[5] [6
+ [5] [6
 
 ]
 Cap\'{\i }tulo 2.
@@ -2218,12 +2207,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 297--302
  []
 
 )
-Output from handle ans going to ans3.tex
-\openout8 = `ans3.tex'.
-
 LaTeX Info: Redefining \. on input line 101.
 LaTeX Info: Redefining \% on input line 101.
-[14]
+ [14]
 Cap\'{\i }tulo 3.
 
 Underfull \hbox (badness 10000) in paragraph at lines 103--104
@@ -2265,32 +2251,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 124--125
 
  []
 
-Output from handle ans going to ans4.tex
-\openout8 = `ans4.tex'.
-
 [15
 
 ] [16
 
 ]
 Cap\'{\i }tulo 4.
-Output from handle ans going to ans5.tex
-\openout8 = `ans5.tex'.
-
 [17] [18
 
 ]
 Cap\'{\i }tulo 5.
-Output from handle ans going to ans6.tex
-\openout8 = `ans6.tex'.
-
 [19] [20
 
 ]
 Cap\'{\i }tulo 6.
-Output from handle ans going to ans7.tex
-\openout8 = `ans7.tex'.
-
 [21] [22
 
 ]
@@ -2303,9 +2277,6 @@ Package hyperref Warning: The anchor of a bookmark and its parent's must not
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\@ifnextchar' on input line 162.
-
-Output from handle ans going to ans8.tex
-\openout8 = `ans8.tex'.
 
 [24
 
@@ -2327,10 +2298,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 33400 strings out of 480681
- 623295 string characters out of 5904631
+ 33384 strings out of 480681
+ 623182 string characters out of 5904631
  1228443 words of memory out of 5000000
- 48356 multiletter control sequences out of 15000+600000
+ 48349 multiletter control sequences out of 15000+600000
  701258 words of font info for 197 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,17n,124p,856b,1590s stack positions out of 5000i,500n,10000p,200000b,80000s
